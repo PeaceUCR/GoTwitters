@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/background_light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivProfileBackgroundImage"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="center"
+        android:src="@android:drawable/gallery_thumb" />
+
+    <ImageView
+        android:id="@+id/ivProfileTopCardImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/picture_frame" />
+
+    <TextView
+        android:id="@+id/tvProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivProfileTopCardImage"
+        android:layout_centerHorizontal="true"
+        android:text="@string/user_name"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvProfileScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvProfileName"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:text="@string/screen_name"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvProfileScreenName"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF"
+        android:text="Tagline"
+        android:textStyle="bold"
+        android:layout_marginBottom="3dp"/>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ivProfileBackgroundImage"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/llFriends"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="5sp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvFriendsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:text="@string/count" />
+
+                <TextView
+                    android:id="@+id/tvFriends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#A4A4A4"
+                    android:padding="3sp"
+                    android:text="@string/friends_count" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llFollowers"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="5sp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvFollowersCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:text="@string/count" />
+
+                <TextView
+                    android:id="@+id/tvFollowers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#A4A4A4"
+                    android:padding="3sp"
+                    android:text="@string/followers_count" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTweets"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="5sp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvTweetsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:text="@string/count" />
+
+                <TextView
+                    android:id="@+id/tvTweets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#A4A4A4"
+                    android:padding="3sp"
+                    android:text="@string/tweets_count" />
+            </LinearLayout>
+        </TableRow>
+
+        <View
+            android:layout_height="0.5dp"
+            android:background="#EAEAEA" />
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/ivVerified"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:paddingLeft="2dp"
+        android:layout_alignBottom="@+id/tvProfileName"
+        android:layout_toRightOf="@+id/tvProfileName"
+        android:src="@drawable/verified_icon" />
+
+</RelativeLayout>

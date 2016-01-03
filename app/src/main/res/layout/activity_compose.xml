@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Linear"
+    android:orientation="vertical"
+    tools:context=".activities.ComposeActivity" >
+
+    <EditText
+        android:id="@+id/etcompose"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="compose your tweets!"
+        android:ems="10"
+        android:lines="8"
+        android:layout_marginTop="20dp"
+        android:background="#dedddd"
+        android:allowUndo="false"
+        android:gravity="top"
+        android:inputType="textMultiLine">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvcharCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="140"
+        android:textSize="15sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+
+
+    <Button
+        android:id="@+id/add_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add image"
+        android:textColor="#ffffff"
+        android:background="@android:color/holo_blue_light" />
+
+    <TextView
+        android:id="@+id/imagepath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="image_attachment"
+        android:singleLine="true"
+        />
+
+    <Button
+        android:id="@+id/btnCompose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="onClickCompose"
+        android:text="Tweet"
+        android:textColor="#ffffff"
+        android:background="@android:color/holo_blue_light" />
+
+
+
+
+
+
+
+</LinearLayout>

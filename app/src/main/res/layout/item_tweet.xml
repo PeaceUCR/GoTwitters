@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/ivProfileImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+        android:adjustViewBounds="true"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/tvUserProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5sp"
+        android:layout_toRightOf="@+id/ivProfileImage"
+        android:text="Profile Name"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Screen Name"
+        android:id="@+id/tvUserScreenName"
+        android:layout_toRightOf="@id/tvUserProfileName"
+        android:layout_alignBottom="@id/tvUserProfileName"
+        android:layout_marginLeft="5sp"
+        android:textColor="#A4A4A4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body"
+        android:id="@+id/tvBody"
+        android:layout_below="@id/tvUserProfileName"
+        android:layout_toRightOf="@id/ivProfileImage"
+        android:layout_alignLeft="@id/tvUserProfileName"
+        android:layout_marginBottom="5dp"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/tvCreatedAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Time"
+        android:textColor="#A4A4A4"/>
+
+    <ImageView
+        android:id="@+id/ivMediaImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="150dp"
+        android:layout_alignLeft="@+id/tvBody"
+        android:layout_alignRight="@+id/tvCreatedAt"
+        android:layout_below="@+id/tvBody"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"  />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tvBody"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ivMediaImage"
+        android:layout_marginTop="5dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/ivReplyIcon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="left"
+                android:adjustViewBounds="true"
+                android:src="@drawable/arrow_gray" />
+
+            <ImageView
+                android:id="@+id/ivRetweetIcon"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:adjustViewBounds="true"
+                android:src="@drawable/retweet_gray" />
+
+            <TextView
+                android:id="@+id/tvRetweetCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingLeft="2dp"
+                android:text="count" />
+
+            <ImageView
+                android:id="@+id/ivFavoriteIcon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:adjustViewBounds="true"
+                android:src="@drawable/star_gray" />
+
+            <TextView
+                android:id="@+id/tvFavoriteCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingLeft="2dp"
+                android:text="count" />
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

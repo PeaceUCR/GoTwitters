@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GoTwitters</string>
+    <string name="login_label">Connect to Twitter</string>
+    <string name="title_activity_timeline">Home</string>
+    <string name="title_activity_Compose">Compose Tweet</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="user_name">\@username</string>
+    <string name="screen_name">screen_name</string>
+    <string name="followers_count">FOLLOWERS</string>
+    <string name="count">#</string>
+    <string name="friends_count">FOLLOWING</string>
+    <string name="tweets_count">TWEETS</string>
+    <string name="tagline_label">Tagline</string>
+
+</resources>

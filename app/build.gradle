@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+
+    defaultConfig {
+        applicationId "com.GoTwitters"
+        minSdkVersion 16
+        targetSdkVersion 21
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+repositories {
+    jcenter()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+}
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    // Picasso for remote image loading
+    // Android Async Http for sending async network requests
+    // ActiveAndroid for simple persistence with an ORM
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.loopj.android:android-async-http:1.4.8'
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile files('libs/universal-image-loader-1.9.5.jar')
+}
