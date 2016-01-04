@@ -1,6 +1,6 @@
 
 # GoTwitters
-This is a Twitter Client
+This is a Android Twitter Client
 allows a user to view home and mentions timelines, view user profiles with user timelines, search twitters,as well as compose and post a new tweet.Refreshing and dynamic loading is also applied.
 more functions will be added in the future.
 
