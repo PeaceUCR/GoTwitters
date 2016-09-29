@@ -68,7 +68,7 @@ import java.io.Serializable;
  */
 
 /**
- * Created by m.sonasath on 12/9/2015.
+ * Created by Ping_He on 2015/12/27.
  */
 public class User implements Serializable{
     // list attributes

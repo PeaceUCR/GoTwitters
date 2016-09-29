@@ -3,9 +3,6 @@ package com.GoTweets.drawer;
 /**
  * Created by Ping_He on 2015/12/26.
  */
-/**
- * Created by Ping_He on 2015/12/23.
- */
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;

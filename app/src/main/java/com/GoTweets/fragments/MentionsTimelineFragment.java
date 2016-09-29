@@ -24,10 +24,10 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-/**
- * Created by m.sonasath on 12/15/2015.
- */
 
+/**
+ * Created by Ping_He on 2015/12/27.
+ */
 public class MentionsTimelineFragment extends TweetsListFragment {
     private TwitterClient client;
     public static final int DEFAULT_SINCE_ID = 0;

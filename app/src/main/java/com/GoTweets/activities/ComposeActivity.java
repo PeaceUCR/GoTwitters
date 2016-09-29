@@ -25,7 +25,9 @@ import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.apache.http.Header;
 import org.json.JSONObject;
-
+/**
+ * Created by Ping_He on 2015/12/27.
+ */
 public class ComposeActivity extends AppCompatActivity {
     private TwitterClient client;
     private static final int LENGTH_BOUND = 140;

@@ -3,7 +3,7 @@ package com.GoTweets.helpers;
 import android.widget.AbsListView;
 
 /**
- * Created by m.sonasath on 12/9/2015.
+ * Created by Ping_He on 2015/12/27.
  */
 public abstract class EndlessScrollListener implements AbsListView.OnScrollListener {
     // The minimum amount of items to have below your current scroll position

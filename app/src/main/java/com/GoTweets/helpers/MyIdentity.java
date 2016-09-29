@@ -4,19 +4,16 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.widget.Toast;
 
-import com.GoTweets.activities.TimelineActivity;
 import com.GoTweets.models.User;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.apache.http.Header;
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
- * Created by m.sonasath on 12/15/2015.
+ * Created by Ping_He on 2015/12/27.
  */
 public class MyIdentity {
         private TwitterClient client;

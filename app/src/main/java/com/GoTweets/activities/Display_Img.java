@@ -27,7 +27,9 @@ import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 
 import java.util.ArrayList;
 import java.util.Collections;
-
+/**
+ * Created by Ping_He on 2015/12/27.
+ */
 public class Display_Img extends AppCompatActivity {
 
     private GridView gv_img;

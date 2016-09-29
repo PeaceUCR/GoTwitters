@@ -8,7 +8,9 @@ import android.view.View;
 import com.GoTweets.helpers.TwitterClient;
 import com.GoTweets.R;
 import com.codepath.oauth.OAuthLoginActionBarActivity;
-
+/**
+ * Created by Ping_He on 2015/12/27.
+ */
 public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 
 	@Override

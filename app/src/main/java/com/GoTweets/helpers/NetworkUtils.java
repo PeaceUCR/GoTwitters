@@ -1,12 +1,11 @@
 package com.GoTweets.helpers;
 
-import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.util.Log;
 
 /**
- * Created by m.sonasath on 12/15/2015.
+ * Created by Ping_He on 2015/12/27.
  */
 public class NetworkUtils {
     public static boolean isConnectedToNetwork(ConnectivityManager connMgr) {

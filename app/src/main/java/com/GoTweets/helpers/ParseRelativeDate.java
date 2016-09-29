@@ -7,7 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Locale;
 
 /**
- * Created by m.sonasath on 12/9/2015.
+ * Created by Ping_He on 2015/12/27.
  */
 public class ParseRelativeDate {
     // getRelativeTimeAgo("Mon Apr 01 21:16:23 +0000 2014");

@@ -12,7 +12,9 @@ import com.GoTweets.fragments.ProfileHeaderFragment;
 import com.GoTweets.fragments.UserTimelineFragment;
 import com.GoTweets.helpers.TwitterClient;
 import com.GoTweets.models.User;
-
+/**
+ * Created by Ping_He on 2015/12/27.
+ */
 public class ProfileActivity extends AppCompatActivity {
     private TwitterClient client;
     User user;

@@ -20,7 +20,7 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 /**
- * Created by m.sonasath on 12/9/2015.
+ * Created by Ping_He on 2015/12/27.
  */
 //take Tweet objects and turn them into views displayed in the list
 public class TweetsArrayAdapter extends ArrayAdapter<Tweet> {
