@@ -8,7 +8,7 @@ more functions will be added in the future.
 
 - [Android Async HTTP](https://github.com/loopj/android-async-http) - Simple asynchronous HTTP requests with JSON parsing
 - [Picasso](http://square.github.io/picasso/) - Image loading and caching library for Android
-- [CodePath OAuth Handler](https://github.com/codepath/android-oauth-handler) OAuth tool
+- [Scribejava](https://github.com/scribejava/scribejava) OAuth tool
 
 ## Screenshot
 #screenshot1
